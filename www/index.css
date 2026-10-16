@@ -1,5 +1,5 @@
 :root {
-  color-scheme: light;
+  color-scheme: light dark;
   font-family: "Figtree", sans-serif;
   color: #202a33;
   background: #fff;
@@ -81,4 +81,15 @@ iframe {
 iframe:focus-visible {
   outline: 2px solid #375f83;
   outline-offset: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #fff;
+    background: #232323;
+  }
+
+  iframe {
+    background: #232323;
+  }
 }
