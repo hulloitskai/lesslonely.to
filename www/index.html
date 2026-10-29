@@ -1,40 +1,75 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Find events for a less lonely winter in Toronto.">
-  <title>One Less Lonely Winter</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="lesslonely.to" />
-  <link rel="manifest" href="/site.webmanifest" />
-</head>
-<body>
-  <header class="banner">
-    <img src="assets/banner.webp" width="2400" height="1800" alt="Toronto bike-share bicycles buried in snow beside a streetcar route." fetchpriority="high">
-    <div class="container banner-title">
-      <img class="logo" src="assets/logo.webp" width="64" height="64" alt="">
-      <h1>One Less Lonely Winter</h1>
-    </div>
-  </header>
-  <main class="container">
-    <iframe
-      src="https://luma.com/embed/calendar/cal-Y1B5HvgaFol9ytX/events"
-      title="Upcoming events for One Less Lonely Winter"
-      width="600"
-      height="450"
-      allowfullscreen
-      aria-hidden="false"
-      tabindex="0"
-    ></iframe>
-  </main>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="color-scheme" content="light dark" />
+        <meta
+            name="description"
+            content="Find events for a less lonely winter in Toronto."
+        />
+        <title>One Less Lonely Winter</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="lesslonely.to" />
+        <link rel="manifest" href="/site.webmanifest" />
+    </head>
+    <body>
+        <header class="banner">
+            <img
+                src="assets/banner.webp"
+                width="2400"
+                height="1800"
+                alt="Toronto bike-share bicycles buried in snow beside a streetcar route."
+                fetchpriority="high"
+            />
+            <div class="container banner-title">
+                <img
+                    class="logo"
+                    src="assets/logo.webp"
+                    width="64"
+                    height="64"
+                    alt=""
+                />
+                <h1>One Less Lonely Winter</h1>
+            </div>
+        </header>
+        <main class="container">
+            <iframe
+                class="calendar"
+                src="https://luma.com/embed/calendar/cal-Y1B5HvgaFol9ytX/events"
+                title="Upcoming events for One Less Lonely Winter"
+                width="600"
+                height="450"
+                allowfullscreen
+                aria-hidden="false"
+                tabindex="0"
+            ></iframe>
+            <a
+                class="donate-button"
+                href="https://www.zeffy.com/en-CA/donation-form/a-less-lonely-toronto-winter"
+                aria-label="Support One Less Lonely Winter"
+            >
+                Donate to support One Less Lonely Winter!
+            </a>
+        </main>
+    </body>
 </html>

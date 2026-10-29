@@ -20,8 +20,8 @@ body {
 .banner {
     position: relative;
     width: 100%;
-    height: clamp(200px, 28vh, 320px);
-    height: clamp(200px, 28dvh, 320px);
+    height: clamp(200px, 24vh, 320px);
+    height: clamp(200px, 24dvh, 320px);
     flex: none;
 }
 
@@ -66,10 +66,11 @@ body {
 }
 
 main.container {
-    padding-block: 28px 16px;
+    padding-block: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 h1 {
@@ -81,19 +82,39 @@ h1 {
     letter-spacing: -0.035em;
 }
 
-iframe {
+.donations {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.donate-button {
+    display: inline-block;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: #fff;
+    background: #375f83;
+    font-weight: 650;
+    text-decoration: none;
+    align-self: center;
+}
+
+.donate-button:hover {
+    background: #294863;
+}
+
+.donate-button:focus-visible {
+    outline: 2px solid #375f83;
+    outline-offset: 3px;
+}
+
+.calendar {
     display: block;
     width: 100%;
     min-height: 320px;
     flex: 1;
     border: 1px solid #bfcbda88;
-    border-radius: 4px;
+    border-radius: 12px;
     background: #fff;
-}
-
-iframe:focus-visible {
-    outline: 2px solid #375f83;
-    outline-offset: 3px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -102,7 +123,7 @@ iframe:focus-visible {
         background: #232323;
     }
 
-    iframe {
+    .calendar {
         background: #232323;
     }
 }
